@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+
+    <title>Train Time!</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
+
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/jumbotron.css" rel="stylesheet">
+
+
+
+
+      <!-- Firebase Reference -->
+    <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script> 
+  </head>
+
+  <body>
+
+   
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+<div class="jumbotron">
+            <h1 class="text-center">Anytime is Train Time</h1>
+                <h2 class = "text-center"> Choo Choo. Chee Chee. </h2>
+        </div>
+        <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+
+
+            </div> <!-- col for the output table -->
+    
+            
+        </div> <!-- row  -->
+        
+        <div class="row"> 
+            <div class="col-md-12">
+
+
+            </div> <!-- col for the form-->
+
+
+
+        </div><!-- form row -->
+            
+        
+
+    </div> <!-- container -->
+
+ <div class="container">
+
+
+
+
+      <!-- Example row of columns -->
+      <div class="row">
+          <div class="col-sm-12">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Train Name</th>
+              <th>Destination</th>
+              <th>Frequency (min)</th>
+              <th>Next Arrival</th>
+              <th>Minutes Away</th>
+              </tr>
+          </thead>
+          <tbody id="tableBody">
+            <tr>
+              <td id="trainName"></td>
+              <td id="destination"></td>
+              <td id="frequency"></td>
+              <td id="nextArrival"></td>
+              <td id="minutesAway"></td>
+              </tr>
+           
+          </tbody>
+        </table>
+        </div>
+      </div>
+<div class="row">
+           <div class="col-sm-12">
+               <br>
+               <!-- First panel is for handling the search parameters -->
+               <div class="panel panel-primary" style="border-color: #20315A ">
+                   <div class="panel-heading" style="background-color: #20315A  ; color: white;">
+                       <h3 class="panel-title"><strong><i class="fa  fa-list-alt"></i>   Add Train</strong></h3>
+                   </div>
+                   <div class="panel-body">
+                       <!-- Here we create an HTML Form for handling the inputs-->
+                       <form role="form">
+                           <!-- Here we create the text box for capturing the search term-->
+                           <div class="form-group">
+                               <label for="trainName">Train Name</label>
+                               <input type="text" class="form-control" id="train-input">
+                           </div>
+                           <!-- Here we capture the number of records that the user wants to retrieve  -->
+                           <div class="form-group">
+                               <label for="Destination">Destination</label>
+                                <input type="text" class="form-control" id="destination-input">
+                           </div>
+                           <!-- Start Time Parameter-->
+                           <div class="form-group">
+                               <label for="firstTime">First Train Time(HH:mm:ss-military time)</label>
+                               <input type="number" class="form-control" id="firstTime">
+                           </div>
+                           <!--End Time Parameter -->
+                           <div class="form-group">
+                               <label for="frequency">Frequency(min)</label>
+                               <input type="number" class="form-control" id="frequency-input">
+                           </div>
+                           <!--submit button -->
+                           <button type="submit" class="btn btn-default" id="submit"><i class="fa fa-search"></i> Submit</button>
+                           </form>
+                   </div>
+               </div>
+           </div>
+       </div>
+      <hr>
+
+      <footer>
+        <p>&copy; 2016 Company, Inc.</p>
+      </footer>
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="assets/javascript/vendor/jquery.min.js"><\/script>')</script>
+    <script src="assets/javascript/bootstrap.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="assets/javascript/traintime.js"></script>
+  </body>
+</html>
